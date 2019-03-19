@@ -29,55 +29,45 @@
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Dice4" translatesAutoresizingMaskIntoConstraints="NO" id="Vbx-rP-m1G">
-                                <rect key="frame" x="49" y="313" width="100" height="100"/>
+                                <rect key="frame" x="49" y="314.5" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="JC5-kj-MTy"/>
                                     <constraint firstAttribute="height" constant="100" id="LiO-PT-JpC"/>
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Dice4" translatesAutoresizingMaskIntoConstraints="NO" id="WjD-u6-ili">
-                                <rect key="frame" x="157" y="313" width="100" height="100"/>
+                                <rect key="frame" x="157" y="314.5" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="LxY-0j-QRM"/>
                                     <constraint firstAttribute="width" constant="100" id="alY-3V-vXA"/>
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Dice4" translatesAutoresizingMaskIntoConstraints="NO" id="zrW-a3-Fu8">
-                                <rect key="frame" x="265" y="313" width="100" height="100"/>
+                                <rect key="frame" x="265" y="314.5" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="3PP-2u-9g5"/>
                                     <constraint firstAttribute="height" constant="100" id="x1j-rb-7nR"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Play Dice" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ge-Jo-9A1">
-                                <rect key="frame" x="114" y="238" width="186" height="57"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="186" id="iLC-NI-XWq"/>
-                                    <constraint firstAttribute="height" constant="57" id="vFG-8D-Tbj"/>
-                                </constraints>
+                                <rect key="frame" x="113.5" y="238" width="187.5" height="58.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="47"/>
                                 <color key="textColor" red="0.038732462490000001" green="0.85166499829999998" blue="0.99763482810000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <size key="shadowOffset" width="2" height="2"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Random Dice" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eyR-Il-d8G">
-                                <rect key="frame" x="134" y="439" width="146" height="49"/>
-                                <color key="backgroundColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="49" id="NcD-KQ-8OC"/>
-                                    <constraint firstAttribute="width" constant="146" id="bFc-4g-zif"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <color key="textColor" red="0.5332116563423408" green="0.57225830946914102" blue="0.99763482810000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <size key="shadowOffset" width="2" height="2"/>
-                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mUR-aK-9kF">
+                                <rect key="frame" x="107" y="459" width="201" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Ramdom Dice"/>
+                                <connections>
+                                    <action selector="ramdomDiceButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hx0-yZ-0m8"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="MSu-Ib-qEv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="28" id="2Me-f9-iqN"/>
-                            <constraint firstItem="eyR-Il-d8G" firstAttribute="top" secondItem="Vbx-rP-m1G" secondAttribute="bottom" constant="26" id="6ml-fW-TcD"/>
                             <constraint firstItem="WjD-u6-ili" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EbM-oZ-a3R"/>
                             <constraint firstItem="zrW-a3-Fu8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="108" id="HD0-JR-37b"/>
                             <constraint firstItem="5Ws-1S-o7M" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="KYJ-wG-9LD"/>
@@ -86,7 +76,6 @@
                             <constraint firstItem="3ge-Jo-9A1" firstAttribute="top" secondItem="MSu-Ib-qEv" secondAttribute="bottom" constant="16" id="ZtY-sQ-xhO"/>
                             <constraint firstItem="WjD-u6-ili" firstAttribute="top" secondItem="3ge-Jo-9A1" secondAttribute="bottom" constant="18" id="arn-lA-vef"/>
                             <constraint firstItem="5Ws-1S-o7M" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="daW-0c-cIL"/>
-                            <constraint firstItem="eyR-Il-d8G" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kPl-ic-LH3"/>
                             <constraint firstItem="5Ws-1S-o7M" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="nob-yj-kvn"/>
                             <constraint firstItem="zrW-a3-Fu8" firstAttribute="top" secondItem="3ge-Jo-9A1" secondAttribute="bottom" constant="18" id="oLk-qW-FLi"/>
                             <constraint firstItem="Vbx-rP-m1G" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-108" id="sAF-ID-dP4"/>
@@ -95,6 +84,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="firstDicelmageView" destination="Vbx-rP-m1G" id="oGy-23-zEJ"/>
+                        <outlet property="secondDicelmageView" destination="WjD-u6-ili" id="eIZ-5l-bEH"/>
+                        <outlet property="thirdDicelmageView" destination="zrW-a3-Fu8" id="EgI-iI-ych"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="hgf-5P-eLt">
