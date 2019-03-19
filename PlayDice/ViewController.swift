@@ -10,10 +10,11 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    // Expiicit
+        var sourceDices = ["Dice1", "Dice2", "Dice3", "Dice4", "Dice5" , "Dice6"]
+    
     @IBOutlet weak var firstDicelmageView: UIImageView!
-    
     @IBOutlet weak var secondDicelmageView: UIImageView!
-    
     @IBOutlet weak var thirdDicelmageView: UIImageView!
     
     override func viewDidLoad() {
@@ -27,8 +28,25 @@ class ViewController: UIViewController {
     @IBAction func ramdomDiceButton(_ sender: UIButton) {
         
         
- print("You Click Ramdom")
+        print("You Click Ramdom")
+//      for Dice1
+        let indexDice1: Int = Int.random (in:0 ... 5)
         
+        firstDicelmageView.image = UIImage(named: sourceDices[indexDice1])
+        
+//      for Dice2
+        let indexDice2: Int = Int.random (in:0 ... 5)
+        secondDicelmageView.image = UIImage(named: sourceDices[indexDice2])
+        
+//      for Dice3
+        let indexDice3: Int = Int.random (in:0 ... 5)
+        thirdDicelmageView.image = UIImage(named: sourceDices[indexDice3])
+        
+        
+        
+        
+        
+
         
     } // ramdonmDice
     
